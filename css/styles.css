@@ -315,6 +315,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #404bbf;
+}
+
+.team-social-icon {
+  fill: #f4f4fd;
+}
 /* -----------CUSTOMERS -------------*/
 
 .customers-title {
@@ -338,8 +347,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
 }
-.link {
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
 }
 
 /* -----------PORTFOLIO -------------*/
@@ -458,4 +475,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
 }
