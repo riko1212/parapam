@@ -22,14 +22,14 @@
     <link href="./css/media.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="logo link header-logo" href
             >Web<span class="logo-dark">Studio</span>
           </a>
           <ul class="header-menu-list list">
-            <li class="header-item">
+            <li class="header-menu-item">
               <a class="header-menu-link link current" href="./index.html"
                 >Studio</a
               >
@@ -54,8 +54,83 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-btn" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href>Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list list">
+              <li class="mob-contacts-item">
+                <a class="mob-contacts-link accent link" href
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-item">
+                <a class="mob-contacts-link link" href>info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-social-list list">
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href>
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href>
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href>
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link link" href>
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -128,6 +203,7 @@
               <img
                 src="./images/doing-img-1.jpeg"
                 alt="doing picture"
+                srcset="./images/doing-img-1-2x.jpeg 2x"
                 width="360"
                 height="300"
               />
@@ -136,6 +212,7 @@
               <img
                 src="./images/doing-img-2.jpeg"
                 alt="doing picture"
+                srcset="./images/doing-img-2-2x.jpeg 2x"
                 width="360"
                 height="300"
               />
@@ -144,6 +221,7 @@
               <img
                 src="./images/doing-img-3.jpeg"
                 alt="doing picture"
+                srcset="./images/doing-img-3-2x.jpeg 2x"
                 width="360"
                 height="300"
               />
@@ -159,6 +237,7 @@
               <img
                 src="./images/team-img-1.jpeg"
                 alt="teammate photo"
+                srcset="./images/team-img-1-2x.jpeg 2x"
                 width="264"
                 height="260
               "
@@ -202,6 +281,7 @@
               <img
                 src="./images/team-img-2.jpeg"
                 alt="teammate photo"
+                srcset="./images/team-img-2-2x.jpeg 2x"
                 width="264"
                 height="260
               "
@@ -245,6 +325,7 @@
               <img
                 src="./images/team-img-3.jpeg"
                 alt="teammate photo"
+                srcset="./images/team-img-3-2x.jpeg 2x"
                 width="264"
                 height="260
               "
@@ -288,6 +369,7 @@
               <img
                 src="./images/team-img-4.jpeg"
                 alt="teammate photo"
+                srcset="./images/team-img-4-2x.jpeg 2x"
                 width="264"
                 height="260
               "
@@ -528,5 +610,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
